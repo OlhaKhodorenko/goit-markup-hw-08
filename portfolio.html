@@ -14,32 +14,40 @@
 <body>
     <header class="header">
         <div class="container header__container">
+            <div class="menu">
+                <a class="logo" href="index.html"><span class="logo--blue">Web</span>Studio</a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#menu"></use>
+                    </svg>
+                </button>
+            </div>
             <nav class="site-nav">
                 <a class="logo" href="index.html"><span class="logo--blue">Web</span>Studio</a>
                 <ul class="site-nav__list">
-                    <li class="site-nav__item ">
-                        <a href="./index.html" class="site-nav__link">Студия</a>
-                    </li>
-                    <li class="site-nav__item ">
-                        <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
                     </li>
                     <li class="site-nav__item">
-                        <a href="" class="site-nav__link">Контакты</a>
+                        <a href="./portfolio.html" class="site-nav__link ">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link ">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <ul class="contacts">
                 <li class="contacts__item ">
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                    <a href="mailto:info@devstudio.com" class="contacts__link ">
                         <svg class="contacts__icon" width="16px" height="12px">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link">
+                    <a href="tel:+380961111111" class="contacts__link ">
                         <svg class="contacts__icon" width="10px" height="16px">
-                            <use hr-ef="./images/icons.svg#smartphone"></use>
+                            <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
                 </li>
@@ -71,7 +79,21 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project1.jpg" width="370" alt="страница сайта на екране ноутбука">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/project-1-desk-1x.jpg 1x,
+                                    ./images/portfolio/project-1-desk-2x.jpg 2x
+                                    " media="(min-width:1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/project-1-tab-1x.jpg 1x,
+                                    ./images/portfolio/project-1-tab-2x.jpg 2x
+                                    " media="(min-width:768px)">
+                                    <source srcset="
+                                    ./images/portfolio/project-1-mob-1x.jpg 1x,
+                                    ./images/portfolio/project-1-mob-2x.jpg 2x
+                                    " media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-1-mob-1x.jpg" alt="страница сайта на екране ноутбука" />
+                                </picture>
                                 <p class="project__text--top">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -86,7 +108,21 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project2.jpg" width="370" alt="баскетболисты с момент игры">
+                                <picture>
+                                    <source srcset="
+                                                                    ./images/portfolio/project-2-desk-1x.jpg 1x,
+                                                                    ./images/portfolio/project-2-desk-2x.jpg 2x
+                                                                    " media="(min-width:1200px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-2-tab-1x.jpg 1x,
+                                                                    ./images/portfolio/project-2-tab-2x.jpg 2x
+                                                                    " media="(min-width:768px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-2-mob-1x.jpg 1x,
+                                                                    ./images/portfolio/project-2-mob-2x.jpg 2x
+                                                                    " media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-2-mob-1x.jpg" alt="баскетболисты в момент игры" />
+                                </picture> 
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime sed. Nisi perferendis autem et placeat error veniam deserunt.
                                 </p>
@@ -100,7 +136,21 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project3.jpg" width="370" alt="эмблема ресторана">
+                                <picture>
+                                    <source srcset="
+                                                                                                    ./images/portfolio/project-3-desk-1x.jpg 1x,
+                                                                                                    ./images/portfolio/project-3-desk-2x.jpg 2x
+                                                                                                    " media="(min-width:1200px)">
+                                    <source srcset="
+                                                                                                    ./images/portfolio/project-3-tab-1x.jpg 1x,
+                                                                                                    ./images/portfolio/project-3-tab-2x.jpg 2x
+                                                                                                    " media="(min-width:768px)">
+                                    <source srcset="
+                                                                                                    ./images/portfolio/project-3-mob-1x.jpg 1x,
+                                                                                                    ./images/portfolio/project-3-mob-2x.jpg 2x
+                                                                                                    " media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-3-mob-1x.jpg" alt="эмблема ресторана" />
+                                </picture>
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -115,7 +165,24 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project4.jpg" width="370" alt="наушники">
+                                <picture>
+                                    <source srcset="
+                                                                                                                                    ./images/portfolio/project-4-desk-1x.jpg 1x,
+                                                                                                                                    ./images/portfolio/project-4-desk-2x.jpg 2x
+                                                                                                                                    "
+                                        media="(min-width:1200px)">
+                                    <source srcset="
+                                                                                                                                    ./images/portfolio/project-4-tab-1x.jpg 1x,
+                                                                                                                                    ./images/portfolio/project-4-tab-2x.jpg 2x
+                                                                                                                                    "
+                                        media="(min-width:768px)">
+                                    <source srcset="
+                                                                                                                                    ./images/portfolio/project-4-mob-1x.jpg 1x,
+                                                                                                                                    ./images/portfolio/project-4-mob-2x.jpg 2x
+                                                                                                                                    "
+                                        media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-4-mob-1x.jpg" alt="наушники" />
+                                </picture>
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -130,7 +197,27 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project5.jpg" width="370" alt="две подарочных коробки">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                                                                                                                    ./images/portfolio/project-5-desk-1x.jpg 1x,
+                                                                                                                                                                    ./images/portfolio/project-5-desk-2x.jpg 2x
+                                                                                                                                                                    "
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="
+                                                                                                                                                                    ./images/portfolio/project-5-tab-1x.jpg 1x,
+                                                                                                                                                                    ./images/portfolio/project-5-tab-2x.jpg 2x
+                                                                                                                                                                    "
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="
+                                                                                                                                                                    ./images/portfolio/project-5-mob-1x.jpg 1x,
+                                                                                                                                                                    ./images/portfolio/project-5-mob-2x.jpg 2x
+                                                                                                                                                                    "
+                                        media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-5-mob-1x.jpg" alt="две подарочных коробки" />
+                                </picture>
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -145,7 +232,27 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project6.jpg" width="370" alt="страница сайта">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                                                                                                                                                    ./images/portfolio/project-6-desk-1x.jpg 1x,
+                                                                                                                                                                                                    ./images/portfolio/project-6-desk-2x.jpg 2x
+                                                                                                                                                                                                    "
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="
+                                                                                                                                                                                                    ./images/portfolio/project-6-tab-1x.jpg 1x,
+                                                                                                                                                                                                    ./images/portfolio/project-6-tab-2x.jpg 2x
+                                                                                                                                                                                                    "
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="
+                                                                                                                                                                                                    ./images/portfolio/project-6-mob-1x.jpg 1x,
+                                                                                                                                                                                                    ./images/portfolio/project-6-mob-2x.jpg 2x
+                                                                                                                                                                                                    "
+                                        media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-6-mob-1x.jpg" alt="страница сайта" />
+                                </picture>
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -161,7 +268,21 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project7.jpg" width="370" alt="разворот журнала">
+                                <picture>
+                                    <source srcset="
+                                                                    ./images/portfolio/project-7-desk-1x.jpg 1x,
+                                                                    ./images/portfolio/project-7-desk-2x.jpg 2x
+                                                                    " media="(min-width:1200px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-7-tab-1x.jpg 1x,
+                                                                    ./images/portfolio/project-7-tab-2x.jpg 2x
+                                                                    " media="(min-width:768px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-7-mob-1x.jpg 1x,
+                                                                    ./images/portfolio/project-7-mob-2x.jpg 2x
+                                                                    " media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-7-mob-1x.jpg" alt="разворот журнала" />
+                                </picture>
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -177,7 +298,21 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project8.jpg" width="370" alt="бирка с логотипом">
+                                <picture>
+                                    <source srcset="
+                                                                    ./images/portfolio/project-8-desk-1x.jpg 1x,
+                                                                    ./images/portfolio/project-8-desk-2x.jpg 2x
+                                                                    " media="(min-width:1200px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-8-tab-1x.jpg 1x,
+                                                                    ./images/portfolio/project-8-tab-2x.jpg 2x
+                                                                    " media="(min-width:768px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-8-mob-1x.jpg 1x,
+                                                                    ./images/portfolio/project-8-mob-2x.jpg 2x
+                                                                    " media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-8-mob-1x.jpg" alt="бирка с логотипом"/>
+                                </picture>
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -193,7 +328,21 @@
                     <li class="project__item">
                         <a href="" class="project__link">
                             <div class="project__thumb">
-                                <img src="./images/project9.jpg" width="370" alt="приложение на екране ноутбука">
+                                <picture>
+                                    <source srcset="
+                                                                    ./images/portfolio/project-9-desk-1x.jpg 1x,
+                                                                    ./images/portfolio/project-9-desk-2x.jpg 2x
+                                                                    " media="(min-width:1200px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-9-tab-1x.jpg 1x,
+                                                                    ./images/portfolio/project-9-tab-2x.jpg 2x
+                                                                    " media="(min-width:768px)">
+                                    <source srcset="
+                                                                    ./images/portfolio/project-9-mob-1x.jpg 1x,
+                                                                    ./images/portfolio/project-9-mob-2x.jpg 2x
+                                                                    " media="(max-width:767px)">
+                                    <img src="./images/portfolio/project-9-mob-1x.jpg" alt="приложение на екране ноутбукаа" />
+                                </picture> 
                                 <p class="project__text--top">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto corporis recusandae cupiditate. Totam, maxime
                                     sed. Nisi perferendis autem et placeat error veniam deserunt.
@@ -280,5 +429,55 @@
             </form>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="close__icon" width="40px" height="40px">
+                <use href="./images/icons.svg#close_40px"></use>
+            </svg>
+        </button>
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="./index.html" class="menu__link">Студия</a>
+            </li>
+            <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link menu__link--current">Портфолио</a>
+            </li>
+            <li class="menu__item">
+                <a href="./index.html" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+        <ul class="menu__contacts">
+            <li class="menu__contacts__item">
+                <a href="tel:+380961111111" class="menu__contacts__link--accent ">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="menu__contacts__item ">
+                <a href="mailto:info@devstudio.com" class="menu__contacts__link">
+                    info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="menu__social">
+            <li class="menu_social-item">
+                <a href="" class="menu__social-link">
+                    Instagram</a>
+            </li>
+            <li class="menu_social-item">
+                <a href="" class="menu__social-link">
+                    Twitter</a>
+            </li>
+            <li class="menu_social-item">
+                <a href="" class="menu__social-link">
+                    Facebook</a>
+            </li>
+            <li class="menu_social-item">
+                <a href="" class="menu__social-link">
+                    LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
