@@ -8,8 +8,11 @@
 }
 .site-nav,
 .site-nav__list {
-  display: flex;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .logo {
   margin-right: 107px;
@@ -71,9 +74,21 @@
   bottom: -1px;
 }
 .contacts {
-  display: flex;
-  .contacts__item:not(:first-child) {
-    margin-left: 50px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    .contacts__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    .contacts__item:not(:first-child) {
+      margin-left: 50px;
+    }
+    .contacts__item:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 .contacts__icon {
@@ -87,8 +102,6 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
 
@@ -99,5 +112,9 @@
   &:focus {
     color: var(--accent-text-color);
     fill: var(--accent-text-color);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
