@@ -7,8 +7,7 @@
   right: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 40px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
   background-color: #ffffff;
   z-index: 200;
   transform: translateX(100%);
@@ -38,9 +37,6 @@
       outline: none;
     }
   }
-}
-.menu__list {
-  margin-top: 48px;
 }
 .menu__item {
   margin-bottom: 32px;
@@ -89,9 +85,12 @@
 .menu__social {
   display: flex;
 }
-.menu_social-item:not(:last-child) {
-  padding-right: 10px;
+.menu__social-item {
+  padding: 0 10px;
   border-right: 1px solid var(--accent-color);
+  &:last-child {
+    border: none;
+  }
 }
 .menu__social-link {
   font-weight: 500;

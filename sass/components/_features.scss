@@ -2,7 +2,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
@@ -10,14 +10,13 @@
   }
 }
 .features__item {
-  margin: 15px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 4 * 15px) / 2);
-    min-width: 270px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 .features__title {
@@ -29,6 +28,9 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--title-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .features__wraper {
   margin-bottom: 30px;
